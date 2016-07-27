@@ -1,0 +1,78 @@
+.card
+	width 100%
+	max-width 550px
+	margin 0 auto
+	box-shadow 2px 4px 2px -2px rgba(0, 0, 0, .3), -2px -4px 15px -2px rgba(0, 0, 0, .2)
+	border-radius 6px
+	.card-header
+		border-radius 6px 6px 0 0 
+		width 100%
+		border-left 15px solid $blue
+		padding 2em 1.5em
+		text-align center
+		background: #272727
+		background-image url('../images/card-header.jpg')
+		background-size cover
+		background-repeat no-repeat
+		background-position center center
+		margin 0
+		h3#tag-name
+			color #FFF
+			font-family 'Raleway', sans-serif
+			font-size 32px
+			padding 0
+			margin 0
+	.card-main
+		width 100%
+		margin 0
+		padding 2.5em 1.5em
+		background #FFF
+		p#tag-info
+			padding 0
+			margin 0
+			font-family 'Raleway', sans-serif
+			font-weight 600
+			color $black
+	.card-footer
+		width 100%
+		marign 0
+		padding 0 1.5em 1.5em 1.5em
+		text-align right
+		background #FFF
+		border-radius 0 0 6px 6px
+		a#other-tag
+			float left
+			i
+				right -2px
+				top 0
+				transition all 0.3s
+				transform rotate(0deg)
+			&:hover i
+				transform rotate(180deg)
+		a
+			color #222
+			font-weight bold
+			font-family 'Oswald', sans-serif
+			letter-spacing 1px
+			position relative
+			display inline-block
+			i
+				font-weight bold
+				position relative
+				top 0
+				color $blue
+			span
+				position relative
+				&:before
+					position absolute
+					content ''
+					display block
+					width 0%
+					height 3px
+					background $blue
+					bottom 0
+					right 0
+					transition all 0.3s
+			&:hover
+				span:before
+					width 100%
